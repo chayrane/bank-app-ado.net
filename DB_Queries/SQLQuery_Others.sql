@@ -1,0 +1,17 @@
+use BankApp;
+
+SELECT * FROM dbo.Bank;
+SELECT * FROM dbo.Account;
+SELECT * FROM dbo.Transactions;
+SELECT * FROM dbo.AcceptedCurrency;
+
+INSERT INTO Bank VALUES ('QWE20230724', 'QWERTY', 'QWERTY001', '2023-07-24', 0, 5, 2, 6);
+
+DELETE FROM Bank WHERE BankId = 'QWE20230726';
+DELETE FROM AcceptedCurrency WHERE BankId = 'QWE20230726';
+DELETE FROM Bank WHERE BankId = 'ASD20230726';
+
+TRUNCATE TABLE Transactions;
+DROP TABLE Transactions;
+
+DELETE FROM Account WHERE BankId = 'QWE20230726';
